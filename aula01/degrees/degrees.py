@@ -17,6 +17,7 @@ def load_data(directory):
     """
     Load data from CSV files into memory.
     """
+    print(directory)
     # Load people
     with open(f"{directory}/people.csv", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -55,7 +56,7 @@ def load_data(directory):
 def main():
     if len(sys.argv) > 2:
         sys.exit("Usage: python degrees.py [directory]")
-    directory = sys.argv[1] if len(sys.argv) == 2 else "small" #########
+    directory = sys.argv[1] if len(sys.argv) == 2 else "large" #########
 
     # Load data from files into memory
     print("Loading data...")
