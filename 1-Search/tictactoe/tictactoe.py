@@ -21,10 +21,6 @@ def initial_state():
             [EMPTY, EMPTY, EMPTY],
             [EMPTY, EMPTY, EMPTY]]
 
-    return [[O, X, X],
-            [O, X, X],
-            [EMPTY, O, EMPTY]]
-
 
 
 
