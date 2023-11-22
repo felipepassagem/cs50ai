@@ -125,7 +125,6 @@ class CrosswordCreator():
         revised = False
         overlaps = self.crossword.overlaps[x, y]
         domain_x_copy = self.domains[x].copy()
-        YY = self.domains[y]
         if overlaps:
             ind_x, ind_j = overlaps
             for w_x in domain_x_copy:
@@ -155,7 +154,6 @@ class CrosswordCreator():
             arcs = []
             for var_1 in self.domains:
                 for var_2 in self.crossword.neighbors(var_1):
-                     #and self.crossword.overlaps[var_1, var_2] != None:
                     arcs.append((var_1, var_2))
         
         while arcs:
